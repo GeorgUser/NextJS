@@ -1,0 +1,21 @@
+.link {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  display: list-item;
+  list-style-type: counter;
+  padding: 10px 20px;
+  background-color: #155202;
+  border-radius: 5px;
+  width: fit-content;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.button {
+  @extend .link;
+
+  display: inline-block;
+}
