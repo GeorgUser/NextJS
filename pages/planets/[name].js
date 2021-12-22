@@ -36,6 +36,16 @@ export async function getServerSideProps({params}) {
             return true;
         }
     });
+
+    if(!planet.length) {
+        return {
+            redirect: {
+                destination: `/`,
+                permanent: true,
+            },
+        }
+    }
+
     const nextPlanet = data[getRandomNumber(data.length, currentPlanet)];
 
     const nextPlanetName = nextPlanet.name;
