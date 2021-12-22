@@ -10,7 +10,7 @@ export async function getStaticProps() {
 
     return {
         redirect: {
-            destination: `star-wars/sw-character-client/${randomPeople}`,
+            destination: `/sw-character-client/${randomPeople}`,
             permanent: false,
         },
     }

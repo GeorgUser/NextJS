@@ -1,5 +1,5 @@
-import planets from '../../../getPlanets';
-import CustomLink from "../../../components/CustomLink";
+import planets from '../../getPlanets';
+import CustomLink from "../../components/CustomLink";
 
 const Planet = ({planet, next}) => {
     return (

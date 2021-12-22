@@ -12,16 +12,16 @@ export default function Home() {
 
       <main>
         <nav className="nav-bar">
-            <CustomLink href={'/star-wars/sw-character-client'}>/sw-character-client</CustomLink>
-            <CustomLink href={'/star-wars/sw-character-client/1'}>/sw-character-client/1</CustomLink>
+            <CustomLink href={'/sw-character-client'}>/sw-character-client</CustomLink>
+            <CustomLink href={'/sw-character-client/1'}>/sw-character-client/1</CustomLink>
             <hr/>
-            <CustomLink href={'/star-wars/sw-character-dynamic'}>/sw-character-dynamic</CustomLink>
-            <CustomLink href={'/star-wars/sw-character-dynamic/1'}>/sw-character-dynamic/1</CustomLink>
+            <CustomLink href={'/sw-character-dynamic'}>/sw-character-dynamic</CustomLink>
+            <CustomLink href={'/sw-character-dynamic/1'}>/sw-character-dynamic/1</CustomLink>
             <hr/>
-            <CustomLink href={'/star-wars/sw-character-static'}>/sw-character-static</CustomLink>
-            <CustomLink href={'/star-wars/sw-character-static/1'}>/sw-character-static/1</CustomLink>
+            <CustomLink href={'/sw-character-static'}>/sw-character-static</CustomLink>
+            <CustomLink href={'/sw-character-static/1'}>/sw-character-static/1</CustomLink>
             <hr/>
-            <CustomLink href={'/star-wars/planets/dorin'}>/planets/dorin</CustomLink>
+            <CustomLink href={'/planets/dorin'}>/planets/dorin</CustomLink>
         </nav>
       </main>
     </div>
