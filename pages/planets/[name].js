@@ -16,14 +16,20 @@ const Planet = ({planet, next}) => {
     )
 }
 
-function getRandomNumber(max, exclude) {
-    const random = Math.floor(Math.random() * max );
+export async function getStaticPaths() {
+    let paths = [];
 
-    if(random !== exclude) {
-        return random;
-    } else {
-        return getRandomNumber(max, exclude);
-    }
+    await getStarWarsPlanets()
+        .then(planets => {
+            paths = planets.map((planet, i) => ({
+                params: {
+                    name: planet.name.toLowerCase(),
+                },
+            }))
+        })
+        .catch(console.error);
+
+    return { paths, fallback: true }
 }
 
 export async function getServerSideProps({params}) {
